@@ -5,7 +5,14 @@ public class Producto {
     private String nombre;
     private double precio;
 
+    private static int ultimocodigo;
 
+    public Producto(){
+        ultimocodigo++;
+        this.codigo= ( "ingrese el nombre del producto");
+        this.nombre=nombre;
+        this.precio=precio;
+    }
 
 public String getCodigo() {
     return codigo;
@@ -30,4 +37,9 @@ public double precio() {
 public void setPrecio(double precio) {
     this.precio = precio;
 }
+
+
+    public double getPrecio() {
+    return precio;
+    }
 }
